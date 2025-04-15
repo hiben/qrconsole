@@ -41,3 +41,7 @@ tasks {
     dependsOn(fatJar) // Trigger fat jar creation during build
   }
 }
+
+tasks.compileJava {
+  options.encoding = "UTF-8"
+}
